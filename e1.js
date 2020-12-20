@@ -26,15 +26,17 @@ window.onload = function clock() {
     var hour = d.getHours();
     var min = d.getMinutes();
     var sec = d.getSeconds();
+    var session = "AM"
     if (hour > 12) {
         hour = hour - 12;
+        session = "PM"
     }
     hour = hour < 10 ? "0" + hour : hour; 
     min = min < 10 ? "0" + min : min; 
     sec = sec < 10 ? "0" + sec : sec; 
     document.getElementById("hour").innerHTML = hour;
     document.getElementById("min").innerHTML = min;
-    document.getElementById("sec").innerHTML = sec;
+    document.getElementById("sec").innerHTML = sec + session;
     setTimeout(clock, 1000);
 }
 
