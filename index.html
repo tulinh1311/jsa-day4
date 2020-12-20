@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="e1.js"></script>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+        }
+
+        .box:hover {
+            background-color: red;
+        }
+        #clock {
+            height: 100px;
+            text-align: center;
+            width: 500px;
+            background-color: rgb(238, 187, 20);
+            color: white;
+            font-size: 60px;
+            margin: auto;
+            text-shadow: 3px 3px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div>
+        <input id='in'>
+        <button type="button" onclick="numberOneTriangle()">Submit</button>
+        <div id="triangle"></div>
+    </div>
+    <div id="clock">
+        <span id="hour"></span>:<span id="min"></span>:<span id="sec"></span>
+    </div>
+</body>
+
+</html>
